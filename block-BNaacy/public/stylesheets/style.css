@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.center {
+  max-width: 1200px;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+input {
+  margin-bottom: 2rem;
+}
