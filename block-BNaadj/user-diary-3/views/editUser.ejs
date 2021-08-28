@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Edit User Details</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <a href="/users">Home</a>
+      <a href="/users/new">Add User</a>
+    </header>
+    <h1>Edit User Details</h1>
+    <form action="/users/<%= user.id %>" method="POST" class="form">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          value="<%= user.name %>"
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          value="<%= user.email %>"
+        />
+      </div>
+      <div>
+        <label for="age">Age: </label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          placeholder="Enter your age"
+          value="<%= user.age %>"
+        />
+      </div>
+      <div>
+        <label for="address">Address : </label>
+        <textarea name="address" id="address" placeholder="Enter your address">
+<%= user.address %>
+          </textarea
+        >
+      </div>
+      <div>
+        <label for="bio">Bio: </label>
+        <textarea name="bio" id="bio"><%= user.bio %></textarea>
+      </div>
+      <div>
+        <label for="hobby">Hobby: </label>
+        <input
+          type="text"
+          name="hobby"
+          id="hobby"
+          placeholder="Enter your hobby"
+          value="<%= user.hobby %>"
+        />
+      </div>
+      <input type="submit" value="Edit User" class="btn" />
+    </form>
+  </body>
+</html>
