@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>All User Details</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <a href="/users">Home</a>
+      <a href="/users/new">Add User</a>
+    </header>
+    <h1>List of Users</h1>
+    <div class="flex users">
+      <!-- <div> -->
+      <% users.forEach(user => { %>
+      <div class="user-name">
+        <h3><%= user.name %></h3>
+        <a href="/users/<%= user.id %>" class="btn btn-details">Show Details</a>
+      </div>
+      <% }) %>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
