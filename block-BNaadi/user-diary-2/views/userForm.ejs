@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Add a new User</title>
+  </head>
+  <body class="center">
+    <h2>Add User Details</h2>
+    <form action="/users" method="POST">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      <div>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" placeholder="Enter your age" />
+      </div>
+      <div>
+        <label for="bio">Bio: </label>
+        <textarea name="bio" id="bio" placeholder="Enter your bio"></textarea>
+      </div>
+      <input type="submit" value="Add User" />
+    </form>
+  </body>
+</html>
