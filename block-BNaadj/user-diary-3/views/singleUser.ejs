@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>User Details</title>
+  </head>
+  <body>
+    <header class="header flex">
+      <a href="/users">Home</a>
+      <a href="/users">Back to All Users</a>
+    </header>
+    <h1>Welcome, <%= user.name %></h1>
+    <div class="users single-user">
+      <h3>Following are your details:</h3>
+      <h4>Email: <%= user.email %></h4>
+      <h4>Age: <%= user.age %></h4>
+      <h4>Address: <%= user.address %></h4>
+      <h4>Bio: <%= user.bio %></h4>
+      <h4>Hobby: <%= user.hobby %></h4>
+      <div class="flex">
+        <a href="/users/<%= user.id %>/edit" class="btn">Edit User</a>
+        <a href="/users/<%= user.id %>/delete" class="btn">Delete User</a>
+      </div>
+    </div>
+  </body>
+</html>
